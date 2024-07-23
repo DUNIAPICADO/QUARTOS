@@ -1,0 +1,77 @@
+---
+title: "Untitled"
+format: html
+---
+code-fold:true
+theme:cosmo
+
+
+```{python}
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+
+
+```
+
+```{python}
+
+
+tarea_quarto=pd.read_excel(r"C:\Users\Usuario\Downloads\semana#10\Superstore.xlsx")
+
+```
+
+```{python}
+
+
+tarea_quarto.dtypes
+
+
+sns.set_theme(style="ticks")
+
+
+
+
+
+
+sns.scatterplot(data=tarea_quarto,x="Profit",y="Sales")
+
+
+
+
+
+```
+
+```{python}
+
+sns.set_theme(style="whitegrid")
+
+sns.scatterplot(data=tarea_quarto,x="Quantity",y="Profit",hue="Sales",legend=False)
+
+
+
+
+```
+
+```{python}
+
+sns.set_theme(style="dark")
+
+sns.scatterplot(data=tarea_quarto,x="Sales",y="Quantity")
+
+
+
+
+
+```
+```{python}
+
+sns.set_theme(style="whitegrid")
+
+sns.scatterplot(data=tarea_quarto,x="Ship Mode",y="Sales")
+
+
+```
+
+``
